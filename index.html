@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bahianita&display=swap"
+      rel="stylesheet"
+    />
+    <title>The Legend of Zelda</title>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="col-sm-8">
+          <h1 class="display-4">Fight For Your Princess Zelda</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <p>Link</p>
+          <input
+            type="image"
+            src="./assets/images/link.png"
+            alt="link"
+            class="img-thumbnail"
+            id="linkBtn"
+          />
+          <p value="130"><span>130</span></p>
+        </div>
+        <div class="col-sm-3">
+          <p>Princess Mipha</p>
+          <input
+            type="image"
+            src="./assets/images/princess-mipha.png"
+            alt="princess-mipha"
+            class="img-thumbnail"
+            id="miphaBtn"
+          />
+          <p value="90"><span>90</span></p>
+        </div>
+        <div class="col-sm-3">
+          <p>Red Lynel</p>
+          <input
+            type="image"
+            src="./assets/images/red-lynel.png"
+            alt="red-lynel"
+            class="img-thumbnail"
+            id="lynelBtn"
+          />
+          <p value="150"><span>150</span></p>
+        </div>
+        <div class="col-sm-3">
+          <p>Daruk</p>
+          <input
+            type="image"
+            src="./assets/images/daruk.jpg"
+            alt="daruk"
+            class="img-thumbnail"
+            id="darkBtn"
+          />
+          <p value="120"><span>120</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8" id="chosenCharacter">Your Character</div>
+        <div class="col-sm-8" id="displayEnemies">
+          Enemies Available To Attack
+        </div>
+
+        <div class="col-sm-8">
+          <button type="button" class="btn btn-primary btn-sm">Attack</button>
+        </div>
+        <div class="col-sm-8" id="defender">Defender</div>
+      </div>
+    </div>
+
+    <script src="./assets/javascript/game.js"></script>
+  </body>
+</html>
