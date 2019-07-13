@@ -12,53 +12,61 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Bahianita&display=swap"
+      href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fredoka+One|Luckiest+Guy&display=swap"
       rel="stylesheet"
     />
     <title>The Legend of Zelda</title>
   </head>
-  <body>
-    <div class="jumbotron jumbotron-fluid">
+  <body class="backgroundColor">
+    <header>The Legend of Zelda</header>
+    <!-- <div class="jumbotron">
       <div class="container">
         <div class="col-sm-8">
           <h1 class="display-4">Fight For Your Princess Zelda</h1>
-        </div>
+        </div> -->
       </div>
     </div>
-    <div class="container">
+    <div class="container" id="clearCharAfterChosen">
       <div class="row">
+        <div class="col"><h1>Select Your Character</h1></div></div>
+
+        <div class="row">
         <div class="col-sm-3">
           <p>Link</p>
           <input
             type="image"
-            src="./assets/images/link.png"
+            src="assets/images/link.png"
             alt="link"
             class="img-thumbnail"
             id="linkBtn"
           />
-          <p value="130"><span>130</span></p>
+          <p value="180">180</p>
         </div>
         <div class="col-sm-3">
           <p>Princess Mipha</p>
           <input
             type="image"
-            src="./assets/images/princess-mipha.png"
+            src="./assets/images/princess-mipha.jpg"
             alt="princess-mipha"
             class="img-thumbnail"
             id="miphaBtn"
           />
-          <p value="90"><span>90</span></p>
+          <p value="100">100</p>
         </div>
         <div class="col-sm-3">
-          <p>Red Lynel</p>
+          <p>Princess Zelda</p>
           <input
             type="image"
-            src="./assets/images/red-lynel.png"
-            alt="red-lynel"
+            src="./assets/images/princess-zelda.jpg"
+            alt="princess-zelda"
             class="img-thumbnail"
-            id="lynelBtn"
+            id="zeldaBtn"
           />
-          <p value="150"><span>150</span></p>
+          <p value="120">120</p>
         </div>
         <div class="col-sm-3">
           <p>Daruk</p>
@@ -67,12 +75,13 @@
             src="./assets/images/daruk.jpg"
             alt="daruk"
             class="img-thumbnail"
-            id="darkBtn"
+            id="darukBtn"
           />
-          <p value="120"><span>120</span></p>
+          <p value="150">150</p>
         </div>
       </div>
     </div>
+  </div>
 
     <div class="container">
       <div class="row">
@@ -87,7 +96,6 @@
         <div class="col-sm-8" id="defender">Defender</div>
       </div>
     </div>
-
     <script src="./assets/javascript/game.js"></script>
   </body>
 </html>
